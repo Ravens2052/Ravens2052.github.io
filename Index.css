@@ -1,5 +1,5 @@
 body {
-    background-color: purple;
+    background-color: black;
 }
 
 p { 
@@ -9,6 +9,32 @@ p {
     font-weight: bold;
 }
 a [target] {
-     background-color: purple;
+     background-color: black;
 }
-     
+ 
+
+
+ 
+div {
+    width: 2000px;
+    height: 2000px;
+    background-color: darkblue;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: darkblue;}
+    to {background-color: purple;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: darkblue;}
+    to {background-color: purple;}
+}
